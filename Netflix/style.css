@@ -1,0 +1,333 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap');
+
+body {
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main {
+    background-image: url(assets/Images/bg.jpg);
+    height: 700px;
+    position: relative;
+    top: 0;
+    background-size: cover;
+    background-position: center center;
+}
+
+.main .box {
+    background-color: black;
+    height: 700px;
+    width: 100%;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    position: relative;
+    display: flex;
+    z-index: 10;
+    justify-content: space-around;
+    padding: 25px 0;
+    gap: 40%;
+}
+
+nav img {
+    height: 40px;
+}
+
+.btn {
+    width: auto;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    margin: 5px;
+    font-size: 15px;
+}
+
+.btn1 {
+    background-color: black;
+    border: 1px solid rgb(168, 153, 153);
+}
+
+.btn2 {
+    background-color: rgb(229, 9, 20);
+    border: none;
+    cursor: pointer;
+}
+
+.btn2:hover {
+    transition: none;
+    background-color: rgb(193, 17, 25);
+}
+
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    height: calc(100% - 100px);
+    margin: 0 30%;
+}
+
+.content h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    text-align: center;
+}
+
+.content :nth-child(2) {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.content :nth-child(3) {
+    font-weight: 500;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.content-btns {
+    display: flex;
+    gap: 8px;
+}
+
+.content-btns input {
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 140px;
+    border-radius: 5px;
+    font-size: 17px;
+    background-color: rgb(27, 26, 26);
+    opacity: 0.8;
+    transition: none;
+    border: 1px solid rgb(168, 153, 153);
+    color: white;
+}
+
+.content-btns input::placeholder {
+    color: rgb(222, 216, 216);
+}
+
+.content-btns button {
+    display: flex;
+    padding: 15px 30px;
+    border-radius: 5px;
+    background-color: rgb(229, 9, 20);
+    border: none;
+    cursor: pointer;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    white-space: nowrap;
+}
+
+div.content .content-btns>button {
+    font-size: 22px;
+}
+
+.content-btns button:hover {
+    transition: none;
+    background-color: rgb(193, 17, 25);
+}
+
+.seperateline {
+    display: flex;
+    position: relative;
+    bottom: 0%;
+    height: 4px;
+    background: linear-gradient(to right, #ff0066, #aa00ff);
+    border: none;
+    box-shadow: 0 -4px 20px #ff0077, 2px 6px 15px #0004ff;
+}
+
+/* .section - 2 */
+.section2 {
+    background-color: black;
+    color: white;
+    padding: 50px 140px;
+}
+
+.scroll-row {
+    overflow-x: auto;
+    padding: 0;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.scroll-row::-webkit-scrollbar {
+    display: none;
+}
+
+.grid {
+    display: flex;
+    gap: 45px;
+    margin: 25px;
+}
+
+.img-box {
+    position: relative;
+    flex-shrink: 0;
+}
+
+.img-box img {
+    border-radius: 7px;
+    cursor: pointer;
+    transition: transform 0.35s ease;
+}
+
+.img-box img:hover {
+    transform: scale(1.1);
+}
+
+.img-number {
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    font-size: 100px;
+    font-weight: 900;
+    color: black;
+    -webkit-text-stroke: 1px white;
+}
+
+/* section -3 */
+.section3 {
+    background-color: black;
+    color: white;
+    padding: 35px 140px;
+}
+
+.container {
+    display: flex;
+    margin: 25px 0;
+    gap: 15px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom right, rgba(22, 22, 152, 0.427), rgba(174, 42, 117, 0.249));
+    height: auto;
+    width: 22%;
+    padding: 24px 16px;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+
+.item p {
+    padding-top: 20px;
+    color: rgba(255, 255, 255, 0.742);
+}
+
+.item img {
+    margin-top: 50px;
+    width: 50px;
+    align-self: flex-end;
+}
+
+/* section -4 */
+.section4 {
+    color: white;
+    padding: 30px 140px;
+}
+
+.questions {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.list {
+    display: flex;
+    position: relative;
+    background-color: rgb(45, 45, 45);
+    width: 96%;
+    cursor: pointer;
+    padding: 24px 24px;
+    font-size: 25px;
+    justify-content: space-between;
+}
+
+.list img {
+    height: 25px;
+    width: 25px;
+}
+
+.list:hover {
+    background-color: rgba(80, 78, 78, 0.884);
+}
+
+/* section 5 */
+.footer {
+    height: 180px;
+}
+
+.footer input {
+    padding-right: 350px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.footer button {
+    padding: 15px 35px;
+    display: flex;
+    white-space: nowrap;
+}
+
+.que {
+    color: rgba(255, 255, 255, 0.742);
+    padding: 30px 140px;
+}
+
+.que a {
+    color: rgba(255, 255, 255, 0.742);
+}
+
+.footer-content {
+    padding: 30px 140px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-item a {
+    color: rgba(255, 255, 255, 0.742);
+    font-size: 14px;
+}
+
+.f-btn {
+    padding: 30px 130px;
+}
+
+.f-txt {
+    font-size: 15px;
+}
+
+.f-txt1 {
+    font-size: 13px;
+    color: rgba(159, 159, 159, 0.856);
+    padding-bottom: 100px;
+}
+
+.f-txt1 a {
+    color: rgb(78, 153, 234);
+}
+
